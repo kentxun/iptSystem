@@ -1,0 +1,29 @@
+package 'iptsys'
+
+config location source
+    option 'directory' '/home/zjc/input'
+    option 'format' 'jpeg'
+    option 'Settings' '321000002'
+    option 'RFID' '321000001'
+    option 'scan_period' '30'
+
+config location dest 
+    option 'address' '192.168.1.107'
+    option 'port' '21'
+    option 'directory' '/'
+    option 'username' 'uftp'
+    option 'password' '123'
+    option 'maxsize' '15'
+
+config processing text2image
+    option 'lines' '3'
+    option 'separatorStr' '/'
+    option 'font' 'Tibe'
+    option 'fontsize' '8'
+    option 'position' 'bottom'
+    option 'maxsize' '15'
+    option 'imagequality' '90'
+    list display ''
+    list display 'Settings'
+    list display 'snapTime1'
+
